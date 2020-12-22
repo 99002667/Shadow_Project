@@ -2,7 +2,6 @@ package com.example.contentsharing;
 
 import com.example.libfreq.Complex;               // importing jar file complex class
 import com.example.libfreq.FFT;                  // importing jar file FFT class
-
 import android.content.Intent;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
@@ -16,10 +15,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
 
 public class ContentDecoder extends Fragment {
 
@@ -28,7 +27,6 @@ public class ContentDecoder extends Fragment {
     private static final int MIN_START_NAM_FREQ = 18750;
     private static final int MAX_START_NAM_FREQ = 18850;
     private static final int MAX_START_NUM_FREQ = 18950;
-
     private Button saveContact;
     private Boolean recording;
     private Boolean decodingName;
@@ -228,7 +226,6 @@ public class ContentDecoder extends Fragment {
                         recording = false;
                         tb1.toggle();
                     }
-
                 }
             }
 
