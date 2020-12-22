@@ -16,7 +16,7 @@ public class PlayWave {
 
 
 
-    /** Class Constructor */
+    /** Constructor Class */
 
     public PlayWave() {
         int bufferSize = AudioTrack.getMinBufferSize(SAMPLE_RATE, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
@@ -25,7 +25,7 @@ public class PlayWave {
 
 
 
-    /** Generate Sine Wave of 20Hz to 20KHz */
+    /** Generate Sine Wave from 20Hz to 20KHz */
 
     public void setWave(int frequency) {
         sampleCount = (int) ((float) SAMPLE_RATE / SAMPLE_COUNT_SCALE);
@@ -60,7 +60,7 @@ public class PlayWave {
 
 
 
-    /** Generate Square Wave of 20Hz to 20KHz */
+    /** Generate Square Wave from 20Hz to 20KHz */
 
     public void setWaveSquare(int frequency) {
 
@@ -84,7 +84,7 @@ public class PlayWave {
 
 
 
-    /**Generate Triangular Wave of 20Hz to 20KHz */
+    /**Generate Triangular Wave from 20Hz to 20KHz */
 
     public void setWaveTriangle(int frequency) {
         sampleCount = (int) ((float) SAMPLE_RATE / frequency);
@@ -104,7 +104,7 @@ public class PlayWave {
     }
 
 
-    /**Generate SawTooth Wave of 20Hz to 20KHz */
+    /**Generate SawTooth Wave from 20Hz to 20KHz */
 
     public void setWaveSawTooth(int frequency) {
         sampleCount = (int) ((float) SAMPLE_RATE / frequency);
