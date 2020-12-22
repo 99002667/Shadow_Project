@@ -8,8 +8,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.ende.ui.main.SectionsPagerAdapter;
+
 
 public class MainActivity extends AppCompatActivity {
 
