@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.ToggleButton;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -76,7 +75,6 @@ public class Encode extends Fragment {
                 audioManager.setStreamVolume(AudioManager.STREAM_MUSIC,
                         progress, 0);
                 tv2.setText(String.valueOf((int) (progress * VOLUME_MUL_VALUE)));
-
             }
 
             @Override
