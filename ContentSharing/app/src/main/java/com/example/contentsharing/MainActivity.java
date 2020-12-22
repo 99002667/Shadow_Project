@@ -3,14 +3,11 @@ package com.example.contentsharing;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-
 import com.google.android.material.tabs.TabLayout;
-
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.contentsharing.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,8 +38,7 @@ public class MainActivity extends AppCompatActivity {
         ActivityCompat.requestPermissions(this, new String[]{
                 Manifest.permission.WRITE_EXTERNAL_STORAGE,
                 Manifest.permission.RECORD_AUDIO,
-
-
+            
         }, REQUEST_PERMISSION_CODE);
     }
 

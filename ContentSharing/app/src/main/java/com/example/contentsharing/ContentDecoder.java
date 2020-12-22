@@ -2,7 +2,6 @@ package com.example.contentsharing;
 
 import com.example.libfreq.Complex;               // importing jar file complex class
 import com.example.libfreq.FFT;                  // importing jar file FFT class
-
 import android.content.Intent;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
@@ -16,29 +15,27 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+
 public class ContentDecoder extends Fragment {
 
+    private TextView tv1;
+    private TextView tv2;
+    private TextView tv3;
+    private ToggleButton tb1;
+    private Boolean recording;
+    private Button saveContact;
+    private Boolean decodingName;
+    private Boolean decodingNumber;
     private static final int SAMPLE_FREQUENCY= 192000;
     private static final int BUFFER_SIZE_IN_BYTES = 8192;
     private static final int MIN_START_NAM_FREQ = 18750;
     private static final int MAX_START_NAM_FREQ = 18850;
     private static final int MAX_START_NUM_FREQ = 18950;
-
-    private Button saveContact;
-    private Boolean recording;
-    private Boolean decodingName;
-    private Boolean decodingNumber;
-    private TextView tv1;
-    private TextView tv2;
-    private TextView tv3;
-    private ToggleButton tb1;
-
-
+    
     private static final int[] frequencyArray = new int[]{18000, 18100, 18200, 19000, 19100, 19200, 19300, 19400, 19500, 19600, 19700, 19800, 19900, 20000, 20200, 20400, 20600, 20800, 21000, 21100, 21200, 21300, 21400, 21500, 21600, 21900, 22000, 22100, 22200, 22300, 22400, 22500, 22600, 22700, 18400, 18500, 18600};
                                                        //   A      B      C      D      E     F      G      H      I      J       K      L      M      N      O      P      Q       R     S      T       U      V      W     X      Y     Z      Space
 
@@ -228,7 +225,6 @@ public class ContentDecoder extends Fragment {
                         recording = false;
                         tb1.toggle();
                     }
-
                 }
             }
 

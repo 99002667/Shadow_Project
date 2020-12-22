@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.ToggleButton;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -150,7 +149,6 @@ public class ContentEncoder extends Fragment {
                 }
 
                 startStopCode();
-
 
             } else {
                 wave.stop();
